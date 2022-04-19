@@ -1,6 +1,6 @@
 FROM tomcat:9.0.46-jdk8-openjdk-buster
 
-MAINTAINER Lee Evans - www.ltscomputingllc.com
+MAINTAINER Cepobia <developer@cepobia.com>
 
 # OHDSI WebAPI and ATLAS web application running in Tomcat
 
