@@ -42,7 +42,7 @@ RUN wget $WEBAPI_WAR_URL \
     && mv /usr/local/tomcat/webapps/WebAPI*.war /usr/local/tomcat/webapps/WebAPI.war
 
 # deploy the released OHDSI Atlas web application
-RUN wget https://github.com/OHDSI/Atlas/archive/v$WEBAPI_RELEASE.zip \
+RUN wget https://github.com/quinterpriest/Atlas/archive/v$WEBAPI_RELEASE.zip \
     && unzip /usr/local/tomcat/webapps/v$WEBAPI_RELEASE.zip \
     && mv /usr/local/tomcat/webapps/Atlas-$WEBAPI_RELEASE /usr/local/tomcat/webapps/atlas \
     && rm -f v$WEBAPI_RELEASE.zip
